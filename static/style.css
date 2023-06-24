@@ -1,0 +1,15 @@
+div {
+font-size: 25px;
+font-family: verdana;
+margin-bottom: 10px;
+}
+
+input{
+font-size: 25px;
+font-family: verdana;
+}
+
+input[name='correct'] {
+width: 30px;
+}
+

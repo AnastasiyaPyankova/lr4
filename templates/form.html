@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>Test</title>
+	</head>
+	<body align=center>
+		<div>
+		<h1>Country capitals Test</h1>
+		</div>
+			<div>
+				<form method="post">
+					<div>
+						<label for="country">Country </label>
+						<input name="country"  value="{{ country }}">
+					</div>
+					<div>
+						<label for="capital">Capital </label>
+						<input type="text" class="form-control" name="capital"  value="{{ capital }}">
+					</div>
+					<div>
+						<input type="submit" class="btn btn-success" value="Answer">
+						<label for="correct">Correct answers </label>
+						<input type="text" class="form-control" name="correct"  value="{{ correct }}">
+					</div>
+					<div>
+						<label>Result </label>
+						<input type="text" name="res" class="form-control" placeholder={{ result }}>
+					</div>
+        		</form>
+        	</div>
+	</body>
+</html>
